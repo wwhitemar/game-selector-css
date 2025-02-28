@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Уроки</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-col">
+            <div class="task">
+                <h1>Уровень <span id="level-num">1</span></h1>
+                <p id="task-text">Выбери все тарелки.</p>
+                <input type="text" id="selector-input" placeholder="Введи селектор">
+                <button onclick="checkAnswer()">Проверить</button>
+                <button onclick="nextLevel()" id="next-btn" style="display:none;">Дальше</button>
+            </div>
+            <div class="table" id="table"></div>
+        </div>
+        <div class="right-col">
+            <div class="hint">
+                <h2>Подсказка <button class="hint-btn" onclick="toggleHint()">💡</button></h2>
+                <p id="hint-text" style="display:none;">Попробуй выбрать элементы по их классу, например, классу тарелок.</p>
+            </div>
+            <div class="html-code">
+                <h2>HTML</h2>
+                <pre id="html-code"></pre>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
